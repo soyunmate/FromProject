@@ -130,14 +130,21 @@ table {
 
 /*------------------------------------------------*/
 
+@font-face {
+  font-family: odinNorse;
+  src: url("/assets/Norse-Bold.otf");
+}
+
 body {
   display: flex;
+  font-family: "Times New Roman", Times, serif;
 }
 
 input {
   max-width: 150px;
   min-height: 25px;
   border-radius: 5px;
+  border-color: #e5e7eb;
 }
 
 fieldset {
@@ -153,34 +160,103 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: beige;
 }
 
-.btn-submit {
-  margin-left: 5vw;
-  width: 10vw;
+legend {
+  margin-left: 2.5vw;
+  font-weight: bold;
+  font-size: 2.5vh;
 }
 
 .left-container {
-  width: 30vw;
+  width: 40vw;
   height: 100vh;
-  background-color: rgb(91, 126, 91);
+  background-image: url("/assets/photo-1585202900225-6d3ac20a6962.avif");
+  background-size: cover;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 40vw;
+  margin-top: 20vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo-text {
+  font-family: odinNorse;
+  color: white;
+  font-size: 10vh;
+}
+
+img[src] {
+  max-width: 10vw;
+  max-height: 10vh;
 }
 
 .right-container {
-  width: 70vw;
+  width: 60vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #e8e8e8f7;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 2.5vw;
+}
+
+.description {
+  margin-bottom: 2.5vh;
+  font-size: 2.5vh;
+}
+
+.title {
+  font-weight: bold;
 }
 
 .form-container {
-  height: 25vh;
-  align-content: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-body {
+  background-color: white;
+  box-shadow: inset;
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
+}
+
+.btn-container {
+  margin-left: 5vw;
+}
+
+.btn-submit {
+  margin-top: 2.5vh;
+  width: 150px;
+  height: 4vh;
+  border-radius: 5px;
+  background-color: rgb(28, 112, 28);
+  color: white;
+  font-size: 1.5vh;
+  font-weight: bolder;
+}
+.login-account {
+  margin-top: 1vh;
+}
+
+input:focus {
+  border: blue;
+  border-style: outset;
+  border-width: 2, 5px;
 }
